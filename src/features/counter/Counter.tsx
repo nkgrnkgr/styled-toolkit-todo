@@ -8,7 +8,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
-
+import Heading from '../../components/Heading';
 export function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
@@ -33,6 +33,7 @@ export function Counter() {
           -
         </button>
       </div>
+      <Heading active>Hello world</Heading>
       <div className={styles.row}>
         <input
           className={styles.textbox}
