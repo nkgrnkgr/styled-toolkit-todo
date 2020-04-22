@@ -1,16 +1,16 @@
 import React from "react";
 
-interface Props {
-
+export interface Props {
+    selectedStatus: 'ALL' | 'Active' | 'Completed'
 }
 
-const VisibilityFilter: React.FC<Props> = () => {
+const VisibilityFilter: React.FC<Props> = ({selectedStatus = "ALL"}) => {
   return (
     <div>
         Show:
-        <button>ALL</button>
-        <button>Active</button>
-        <button>Completed</button>
+        <button disabled={selectedStatus === 'ALL'}>ALL</button>
+        <button disabled={selectedStatus === 'Active'}>Active</button>
+        <button disabled={selectedStatus === 'Completed'}>Completed</button>
     </div>
   );
 };
