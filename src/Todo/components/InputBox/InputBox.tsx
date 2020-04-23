@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler } from "./node_modules/react";
+import React, { ChangeEventHandler } from "react";
 
 interface Props {
   onChange: ChangeEventHandler;

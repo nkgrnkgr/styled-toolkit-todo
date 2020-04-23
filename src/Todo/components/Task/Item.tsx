@@ -1,6 +1,6 @@
 
-import React from "./node_modules/react";
-import styled from "./node_modules/styled-components";
+import React from "react";
+import styled from "styled-components";
 import { PropsForStyled } from "../../../typing/styled";
 
 export interface Props extends PropsForStyled {
