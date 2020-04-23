@@ -1,4 +1,4 @@
-import React  from "react";
+import React  from "./node_modules/react";
 import VisibilityFilter, { Props} from "./VisibilityFilter";
 
 const Container = () => {

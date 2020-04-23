@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import Item, { Props as ItemProps } from "./Item";
 
 export interface Props {

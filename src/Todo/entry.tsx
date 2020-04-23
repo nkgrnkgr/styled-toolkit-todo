@@ -3,7 +3,7 @@ import InputBox from "./components/InputBox";
 import VisibilityFilter from "./components/VisibilityFilter";
 import Task from "./components/Task";
 
-const List = () => {
+const Todo = () => {
   return (
     <React.Fragment>
       <InputBox />
@@ -13,4 +13,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default Todo;

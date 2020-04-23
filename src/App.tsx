@@ -1,10 +1,10 @@
 import React from "react";
-import List from "./list/entry";
+import Todo from "./Todo/entry";
 
 function App() {
   return (
     <React.Fragment>
-      <List />
+      <Todo />
     </React.Fragment>
   );
 }
