@@ -1,10 +1,9 @@
-import React  from "react";
-import VisibilityFilter, { Props} from './VisibilityFilter'
-
+import React from "react";
+import VisibilityFilter, { Props } from "./VisibilityFilter";
 
 const Container = () => {
   const props: Props = {
-      selectedStatus: "ALL"
+    selectedStatus: "ALL",
   };
 
   return <VisibilityFilter {...props} />;
