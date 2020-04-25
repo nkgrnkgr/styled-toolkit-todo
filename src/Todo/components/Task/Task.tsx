@@ -1,15 +1,18 @@
 import React from "react";
-import Item, { Props as ItemProps } from "./Item";
+import Item, { ItemModel } from "./Item";
 
 export interface Props {
-    items: ItemProps[];
+  items: ItemModel[];
+  onClickItem: (id: number) => void;
 }
 
-const Task: React.FC<Props> = ({items}) => {
+const Task: React.FC<Props> = ({ items, onClickItem }) => {
   return (
-      <ul>
-          {items.map(i => <Item key={i.id} {...i} />)}
-      </ul>
+    <ul>
+      {items.map((i) => (
+        <Item key={i.id} {...i} onClickItem={onClickItem} />
+      ))}
+    </ul>
   );
 };
 
