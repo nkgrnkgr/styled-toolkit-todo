@@ -5,10 +5,12 @@ import {
 } from "@reduxjs/toolkit";
 import * as inputBox from "./inputBox";
 import * as task from "./task";
+import * as visibilityFilter from "./visibilityFIlter";
 
 const rootReducer = combineReducers({
   inputBox: inputBox.reducer,
   task: task.reducer,
+  visibilityFilter: visibilityFilter.reducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
