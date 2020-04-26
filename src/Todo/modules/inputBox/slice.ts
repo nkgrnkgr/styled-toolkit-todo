@@ -15,5 +15,8 @@ export const { actions, reducer, name } = createSlice({
     changeText: (state, action: PayloadAction<string>) => {
       state.text = action.payload;
     },
+    clearText: (state) => {
+      state.text = "";
+    },
   },
 });

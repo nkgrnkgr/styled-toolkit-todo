@@ -14,12 +14,14 @@ const Container = () => {
     (state) => state.task.items
   );
   const props = {
+    text,
     onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
       dispatch(inputBoxOparations.changeText(e.target.value)),
     onClick: () => {
       dispatch(
         taskOparations.addTask({ id: items.length + 1, text, completed: false })
       );
+      dispatch(inputBoxOparations.clearText());
     },
   };
 
