@@ -1,5 +1,5 @@
 {
-  "name": "use-pagination",
+  "name": "example2-fetch-github-info",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
