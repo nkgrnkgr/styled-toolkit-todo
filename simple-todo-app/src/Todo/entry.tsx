@@ -10,11 +10,11 @@ export const store = setupStore();
 const Todo = () => {
   return (
     <React.Fragment>
-    <Provider store={store}>
-      <InputBox />
-      <Task />
-      <VisibilityFilter />
-    </Provider>
+      <Provider store={store}>
+        <InputBox />
+        <Task />
+        <VisibilityFilter />
+      </Provider>
     </React.Fragment>
   );
 };
